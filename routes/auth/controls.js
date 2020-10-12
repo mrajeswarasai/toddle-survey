@@ -1,6 +1,5 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require('bcryptjs');
-const _ = require("lodash"); // for modifing the array contents
 const {
     RegisterValidation,
 } = require('./authValidation');
