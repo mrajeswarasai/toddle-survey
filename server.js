@@ -55,7 +55,7 @@ app.use("/api/auth", require("./routes/auth/auth"));
 
 app.use("/api/survey", require("./routes/survey/survey"));
 
-app.use("/api/image", require("./routes/image/image"));
+// app.use("/api/image", require("./routes/image/image"));
 
 
 
