@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "40df3771-f973-4141-a18c-99f236952752",
+		"name": "survey-app-083",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"SaiRajeswar\",\r\n    \"password\": \"lol@1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		},
+		{
+			"name": "Create survey",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYwMjUwNzE3NywiZXhwIjoxNjAyNTkzNTc3fQ.c1Nt5WGeHql8-oXupDXAUtc70dGzNM-8k8A7pOLXqaw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"surveyname\":\"Toddle task\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/survey/create",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"survey",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add questions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYwMjUwNzE3NywiZXhwIjoxNjAyNTkzNTc3fQ.c1Nt5WGeHql8-oXupDXAUtc70dGzNM-8k8A7pOLXqaw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Have you completed answering survey ?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/survey/add/1",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"survey",
+						"add",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Take survey",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYwMjUwNzE3NywiZXhwIjoxNjAyNTkzNTc3fQ.c1Nt5WGeHql8-oXupDXAUtc70dGzNM-8k8A7pOLXqaw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/survey/takesurvey/1",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"survey",
+						"takesurvey",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Answer survey",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYwMjUwNzE3NywiZXhwIjoxNjAyNTkzNTc3fQ.c1Nt5WGeHql8-oXupDXAUtc70dGzNM-8k8A7pOLXqaw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"questionId\": \"1\",\r\n            \"ans\": \"true\"\r\n        },\r\n        {\r\n            \"questionId\": \"2\",\r\n            \"ans\": \"true\"\r\n        },\r\n        {\r\n            \"questionId\": \"3\",\r\n            \"ans\": \"true\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/survey/ans/1",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"survey",
+						"ans",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View survey results",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTYwMjUwNzE3NywiZXhwIjoxNjAyNTkzNTc3fQ.c1Nt5WGeHql8-oXupDXAUtc70dGzNM-8k8A7pOLXqaw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/survey/viewResults/1",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"survey",
+						"viewResults",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Image resizing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://cloud.toddleapp.com/assets/toddleapp.com/illustrations/hero/homePageHero.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/image/resize",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"resize"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
