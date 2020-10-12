@@ -1,0 +1,41 @@
+{
+    "name": "toddle-survey",
+    "version": "1.0.0",
+    "description": "toddle task",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mrajeswarasai/toddle-survey.git"
+    },
+    "author": "Sai Rajeswar Maddimsetty",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/mrajeswarasai/toddle-survey/issues"
+    },
+    "homepage": "https://github.com/mrajeswarasai/toddle-survey#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "fs": "0.0.1-security",
+        "helmet": "^4.1.1",
+        "joi": "^17.2.1",
+        "jsonwebtoken": "^8.5.1",
+        "loadash": "^1.0.0",
+        "morgan": "^1.10.0",
+        "multer": "^1.4.2",
+        "path": "^0.12.7",
+        "sharp": "^0.26.1",
+        "sqlite3": "^5.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    },
+    "engines": {
+        "node": "v12.10.0"
+    }
+}
