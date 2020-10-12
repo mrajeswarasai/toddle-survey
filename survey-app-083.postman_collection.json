@@ -227,6 +227,37 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Image resizing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"url\": \"https://cloud.toddleapp.com/assets/toddleapp.com/illustrations/hero/homePageHero.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://survey-app-083.herokuapp.com/api/image/resize",
+					"protocol": "https",
+					"host": [
+						"survey-app-083",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"image",
+						"resize"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
