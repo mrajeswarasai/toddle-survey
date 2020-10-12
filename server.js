@@ -57,7 +57,12 @@ app.use("/api/survey", require("./routes/survey/survey"));
 
 // app.use("/api/image", require("./routes/image/image"));
 
+app.get('/', (req, res) => {
+    const msg = "Welcome to toddle task !! </br></br>*******************************************************</br></br>A.)Mock Authentication resulting signed jsonwebtoken [JWT].</br> &emsp;The jsonwebtoken will be there in the header named authoristaion</br></br>*******************************************************</br></br>B.) Survey</br> &emsp;1.) Create survey.</br> &emsp;2.) Add Questions to survey.</br> &emsp;3.) Take survey (which displays questions).</br> &emsp;4.) Answer survey.</br> &emsp;5.) View results of survey.</br></br>*******************************************************"
+    res.status(200)
+        .send(msg);
 
+})
 
 const port = process.env.PORT || 3000;
 
