@@ -43,4 +43,9 @@ hosted at: [https://survey-app-083.herokuapp.com/](https://survey-app-083.heroku
 - Can view resized image in [https://survey-app-083.herokuapp.com/image_thumb.jpeg](https://survey-app-083.herokuapp.com/image_thumb.jpeg)
 
 Also included public directory where the files in that directiry can be accessed using url.
-DB schema : [https://survey-app-083.herokuapp.com/db_schema.png](https://survey-app-083.herokuapp.com/db_schema.png)
+- DB schema : [https://survey-app-083.herokuapp.com/db_schema.png](https://survey-app-083.herokuapp.com/db_schema.png)
+
+### Todo
+
+- Correct duplicate responses to the survey by creatinhg another table.
+- Implementation in GaphQL
