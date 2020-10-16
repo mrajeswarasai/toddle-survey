@@ -47,5 +47,5 @@ Also included public directory where the files in that directiry can be accessed
 
 ### Todo
 
-- Correct duplicate responses to the survey by creatinhg another table.
+- Handling duplicate responses to the survey by creating another table.
 - Implementation in GaphQL
